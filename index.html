@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juego Incremental</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <!--Barra lateral izquierda-->
+      <div class="barraDeMenu">
+        <div class="logoBarraLateral">
+          <img
+            src="/Assets/Imagenes/Logo.PNG"
+            alt="Hola"
+            style="width: 100%; max-width: 120px"
+          />
+        </div>
+        <div class="barraDeTrabajos">
+          <div><button id="trabajoTalar">Talar</button></div>
+          <div><button id="trabajoMinar">Minar</button></div>
+          <div><button id="trabajoPescar">Pescar🔒</button></div>
+        </div>
+        <div class="botonGuardado">
+          <button id="btnGuardar">💾 Guardar</button>
+        </div>
+      </div>
+      <!--Barra lateral derecha-->
+      <div class="barraDerecha">
+        <!--Barra horizontal con info del jugador-->
+        <div class="barraInfoJugador">
+          <div class="barraHerramientas">
+            <div id="hacha">Hacha nv.<span id="numNivelHacha">1</span></div>
+            <div id="pico">Pico nv.<span id="numNivelPico">1</span></div>
+          </div>
+          <div class="expHerramientas">
+            <div class="expHacha" id="expHacha">XP: 0/20</div>
+            <div class="expPico" id="expPico">XP: 0/20</div>
+          </div>
+        </div>
+        <!--Tarjetas con recursos-->
+        <div class="contenedorDeTarjetas">
+          <!--Maderas-->
+          <div class="tarjeta tarjetaMadera" data-recurso="Roble">
+            <div class="recursoConNumero">
+              Roble:<span id="numMaderaRoble">0</span>
+            </div>
+            <img
+              src="/Assets/Imagenes/Roble.PNG"
+              alt="Hola"
+              style="width: 100%; max-width: 120px"
+            />
+            <button class="boton">Talar</button>
+          </div>
+          <div class="tarjeta tarjetaMadera" data-recurso="Pino">
+            <div class="recursoConNumero">
+              Pino:<span id="numMaderaPino">0</span>
+            </div>
+            <img
+              src="/Assets/Imagenes/Pino.PNG"
+              alt="Hola"
+              style="width: 100%; max-width: 70px"
+            />
+            <button class="boton">Talar</button>
+          </div>
+          <!--Piedras-->
+          <div class="tarjeta tarjetaPiedra" data-recurso="Cobre">
+            <div class="recursoConNumero">
+              Cobre: <span id="numPiedraCobre">0</span>
+            </div>
+            <img
+              src="/Assets/Imagenes/Cobre.PNG"
+              alt="Hola"
+              style="width: 100%; max-width: 120px"
+            />
+            <button class="boton">Minar</button>
+          </div>
+          <div class="tarjeta tarjetaPiedra" data-recurso="Hierro">
+            <div class="recursoConNumero">
+              Hierro: <span id="numPiedraHierro">0</span>
+            </div>
+            <img
+              src="/Assets/Imagenes/Hierro.PNG"
+              alt="Hola"
+              style="width: 100%; max-width: 120px"
+            />
+            <button class="boton">Minar</button>
+          </div>
+          <!--Fin-->
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
